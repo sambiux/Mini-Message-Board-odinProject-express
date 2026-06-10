@@ -6,9 +6,9 @@ const messageValues = require("../controllers/messageCntrlerValues.js")
 
 
 
-messagesRouter.get("/", messageCntrler);
-messagesRouter.get("/new", createMessage);
-messagesRouter.post("/new", messageValues )
+messagesRouter.get("/", messageCntrler.messageCntrlerHome);
+messagesRouter.get("/new", messageCntrler.createMessage);
+messagesRouter.post("/new", messageCntrler.messageCntrlerValues);
 
 
 module.exports = messagesRouter
